@@ -57,3 +57,6 @@
 ;; バッファの自動再読み込み
 ; emacs外からファイルが編集された時に再読み込みをする
 (global-auto-revert-mode 1)
+
+; 対応する括弧のハイライト
+(show-paren-mode t)
