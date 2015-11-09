@@ -22,17 +22,17 @@
 (menu-bar-mode 0)
 
 
-;; auto-install
+;; ;; auto-install
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install/"))
 (package-initialize)
-(require 'auto-install)
-(auto-install-update-emacswiki-package-name t)
-(auto-install-compatibility-setup)
+;; (require 'auto-install)
+;; (auto-install-update-emacswiki-package-name t)
+;; (auto-install-compatibility-setup)
 
-;; melpa.el
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+;; ;; melpa.el
+;; (require 'package)
+;; (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 
 ;; init-loader
@@ -60,3 +60,17 @@
 
 ; 対応する括弧のハイライト
 (show-paren-mode t)
+
+;; 大文字と小文字を区別しない
+;; 検索(全般)時には大文字小文字の区別をしない
+(setq case-fold-search t)
+;; インクリメンタルサーチ時には大文字小文字の区別をしない
+(setq isearch-case-fold-search t)
+
+;; カーソルの点滅を消す
+(blink-cursor-mode 0)
+
+
+(require 'inf-php)
+
+(setq default-tab-width 4)
