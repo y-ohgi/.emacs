@@ -22,15 +22,15 @@
 (menu-bar-mode 0)
 
 
-;; ;; auto-install
+;; ;; ;; auto-install
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install/"))
 (package-initialize)
-;; (require 'auto-install)
-;; (auto-install-update-emacswiki-package-name t)
-;; (auto-install-compatibility-setup)
+(require 'auto-install)
+;;(auto-install-update-emacswiki-package-name t)
+;;(auto-install-compatibility-setup)
 
-;; ;; melpa.el
-;; (require 'package)
+;; melpa.el
+(require 'package)
 ;; (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
@@ -71,6 +71,6 @@
 (blink-cursor-mode 0)
 
 
-(require 'inf-php)
+;(require 'inf-php)
 
-(setq default-tab-width 4)
+;(setq default-tab-width 4)
