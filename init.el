@@ -52,7 +52,7 @@
 	(error
 	 ;; (init-loader-error-log (error-message-string e)) ；削除
 	 (init-loader-error-log (format "%s. %s" (locate-library el) (error-message-string e))) ;追加
-	          )))))
+	 )))))
 
 ;; バッファの自動再読み込み
 ; emacs外からファイルが編集された時に再読み込みをする
