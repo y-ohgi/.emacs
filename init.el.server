@@ -29,10 +29,6 @@
 ; "yes or no" to "y or n"
 (fset 'yes-or-no-p 'y-or-n-p)
 
-; disable toolbar
-(tool-bar-mode 0)
-(menu-bar-mode 0)
-
 ; auto file reload
 (global-auto-revert-mode 1)
 
