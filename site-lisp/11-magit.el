@@ -2,13 +2,15 @@
 ; emacsのgitクライアント
 
 (require 'magit)
+(global-set-key "\C-x\g" 'magit-status)
 
-(eval-after-load 'magit
-  '(progn
-     (set-face-background 'magit-item-highlight "#202020")
-     (set-face-foreground 'magit-diff-add "#40ff40")
-     (set-face-foreground 'magit-diff-del "#ff4040")
-          (set-face-foreground 'magit-diff-file-header "#4040ff")))
+
+;; (eval-after-load 'magit
+;;   '(progn
+;;      (set-face-background 'magit-item-highlight "#202020")
+;;      (set-face-foreground 'magit-diff-add "#40ff40")
+;;      (set-face-foreground 'magit-diff-del "#ff4040")
+;;           (set-face-foreground 'magit-diff-file-header "#4040ff")))
 
 ;; 背景色変更
 ;; (set-face-background 'magit-item-highlight "#282822") ; 選択行
